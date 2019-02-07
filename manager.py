@@ -11,13 +11,17 @@ class Manager(object):
         print(target.read())
         target.close()
 
-    def add_to_list(self, item):
+    def add_to_list(self):
 
         target = open(file_name, 'a')
-        item = input('What do you want do add')
-        print(target.write(item))
+        add_item = target.write(input('What do you want do add? '))
+#        print(target.write(item))
         target.close()
 
-text = Manager()
-text.read()
+    #def complete_items():
+
+add_item = Manager()
+add_item.add_to_list()
+#text = Manager()
+#text.read()
 #text.close()
