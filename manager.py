@@ -1,4 +1,23 @@
+from sys import argv
+import item
+
+script, file_name = argv
 class Manager(object):
-    # 1. Print all of the to-do items in the list
-    # 2. Add a new item to the list
-    # 3. Mark an item as completed
+
+    def read(self):
+
+        target = open(file_name, 'r')
+        print(target.read())
+        target.close()
+
+    def add_to_list(self, item):
+
+        target = open(file_name, 'a')
+
+        target.write()
+
+        target.close()
+
+text = Manager()
+text.read()
+#text.close()
