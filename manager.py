@@ -15,8 +15,9 @@ class Manager(object):
     def add_to_list(self):
 
         target = open('todos.txt', 'a')
-        add_item = target.write(input('What do you want do add? '))
-#        print(target.write(item))
+        task = input('What do you want do add? ')
+        add_item = target.write("\n" + task)
+#        print(target.write())
         target.close()
 
     def exit(self):
