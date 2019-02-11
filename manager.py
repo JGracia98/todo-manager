@@ -5,8 +5,8 @@ script, file_name = argv
 
 class Manager(object):
 
+    print("Welcome to your to-do manager!")
     def read(self):
-
         target = open(file_name, 'r')
         print(target.read())
         target.close()
@@ -17,6 +17,8 @@ class Manager(object):
         add_item = target.write(input('What do you want do add? '))
 #        print(target.write(item))
         target.close()
+
+
 
     #def complete_items():
 
